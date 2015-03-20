@@ -1,0 +1,179 @@
+/* tan box in the center of page */
+#thePage {
+	background-image:url(../img/WebBackground.jpg);
+	cursor:url(../img/cursor.png), pointer;
+}
+
+.pageWrapping {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#thePage:active {
+	cursor:url(../img/cursor2.png), pointer;
+}
+
+#textBox {
+	min-height: 470px;
+	width: 100%; 	
+	background-image:url(../img/parchment.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	font-family: "Papyrus";
+	font-size: 20px;
+	box-sizing: border-box;
+	border-radius: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+/*title at the top of the page*/
+#pageTitle {
+	font-family: "Papyrus";
+	text-align: center;
+	margin-bottom: 25px;
+}
+.alignment-example {
+    height: 50px;
+    font-size: 0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+/*Nav bar at top of page*/
+.sub-item {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+.sub-item:hover {
+	opacity: 0.40;
+	transition: all 0.25s ease-in-out;
+	font-size: 18px;
+	cursor:url(../img/cursor.png), pointer;
+	text-decoration: none;
+}
+.sub-item:active {
+	cursor:url(../img/cursor2.png), pointer;
+}
+.nav-bar {
+	background: transparent;
+}
+
+/*drop down box*/
+#adventureSelector {
+	margin: 10px;
+}
+#adventureSelector:hover {
+	cursor:url(../img/cursor.png), pointer;
+}
+#adventureSelector {
+	cursor:url(../img/cursor2.png), pointer;
+}
+
+#text-textBox {
+	color: blue;
+}
+.hidden {
+	display: none;
+}
+
+.content-page {
+	text-align: center;
+	padding: 50px 100px;
+}
+
+.content-page p {
+	margin: 1px;
+}
+/*yes & no buttons*/
+
+.yesButton, .noButton {
+	display: block;
+	color: #1D721D;
+	text-decoration: none;
+	cursor:url(../img/cursor.png), pointer;
+}
+.yesButton:active, .noButton:active {
+	cursor:url(../img/cursor2.png), pointer;
+}
+
+/* animations */
+.animationContainer {
+	position: relative;
+}
+
+#Gaurd1 {
+	margin-left: 0px;
+	transition: margin-left 0.5s ease-in-out;
+}
+#Gaurd1.stabbing {
+	margin-left: -80px;
+	transition: margin-left 0.5s ease-in-out;
+}
+
+#mainC.falling {
+	margin-bottom: -20px;
+	transform: rotate(-90deg);
+	transition: all 0.5s ease-in-out;
+}
+
+#Gaurd2 {
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 120px;
+}
+#Stickhorse {
+	width: 150px;	
+	margin-right: 289px;
+}
+#Arrow {
+	width: 50px;
+	position: absolute;
+	right: 174px;
+	bottom: 94px;
+	transition: right 0.4s ease-in-out;
+}
+#Arrow.shooting {
+	right: 200%;
+	transition: right 0.4s ease-in-out;
+}
+
+#StickmanFire {
+	width: 50px;
+}
+#StickmanFire.burning {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+#DragonFire {
+	width: 200px;
+	margin-left: -74px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+#DragonFire.burning {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>index</title>
+  <meta name="description" content="">
+  <meta name="author" content="Aidan">
+
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Include Required Javascript -->
+  <script src="./js/jquery-1.11.0.min.js"></script>
+  <script src="./js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body id= "thePage">
+  <div id="main">
+    <header>
+      <h1 id="pageTitle"></h1>
+    </header>
+	<div class="alignment-example align-left nav-bar">
+		<div class="sub-item play-menuSelect" id="navHome">Home</div>	
+    	<div class="sub-item play-menuSelect" id="navAbout">About</div>
+    	<div class="sub-item play-menuSelect" id="navContactMe">Contact Me</div>
+    	<div class="sub-item play-menuSelect" id="navYouTube">Youtube Channel</div>
+	</div>
+	
+	<div class="pageWrapping">
+	    <div>
+	      
+	      <select id="adventureSelector">
+	      	<option value="">Choose Your Adventure</option>
+	      	<option value="midevalAdventure">Mideval Sneak</option>
+	      </select>
+	      
+	    </div>
+	    <div id="textBox">
+    	<div id="navHomeContent" class="content-page">
+	    	<h1>Welcome!</h1>
+	    	<p>	Welcome surfer of the web! You have discovered my site. This site was originally made as a school project.</p>
+	    	<p>	It is a basic text-adventure setup that allows many possibilities. I would appreciate if you were not mean</p>
+	    	<p>	or nagging of this project considering it is my first one yet. Enjoy!</p>
+    	</div>
+    	<div id="navAboutContent" class="content-page hidden">
+    		<h1>About Page</h1>
+    		<p>This website was riginally created as a school project. It was designed to be a basic text-adventure.</p>
+    		<p>I wanted to explore some more advanced commands than what was known to me prior to the experiment.</p>
+    		<p>There is not much more information I can offer except that I hope that you are not nagging of it but supportive. Enjoy!</p>
+    	</div>
+		<div id="navContactMeContent" class="content-page hidden">
+			<h1>Contact Me</h1>
+			<p>Email Adress:</p>
+			<p>notyourordinarynerd@gmail.com</p>
+			<p>That is all I am willing to give to the public, sorry.</p>
+		</div>    
+		<div id="navYouTubeContent" class="content-page hidden">
+			<h1>Youtube Channel</h1>
+			<p>Here is the link to my youtube channel:</p>
+			<a href="https://www.youtube.com/channel/UCLipS5dDVmOKHcVTP1Fi3WQ">CLICK HERE</a>
+			<p>Enjoy!</p>
+		</div>
+    	
+    	
+    	
+    	
+    	<!-- mideval adventure text --> <!-- QUESTION 1 -->
+    	<div id="midevalAdventure" class="content-page hidden" data-yes="midevalAdventure1" data-no="midevalAdventure2">
+    		<p>You awake in a small cobble room with one barred window. You shift your gaze and see an open door.</p>
+    		<p>You then stand up and walk out of the room. You come into an open, torchlit hall. There are two guards standing there, chatting.</p>
+    		<p>"Hey! You're Awake!" says one of the men, "We thought you would never wake up."</p>
+    		<p>                </p>
+    		<p>                </p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton play-pageTransition">Do you ask about what is going on?</a>
+    		<a href="#" class="noButton play-pageTransition">Or do you kick the guard for putting you in jail?</a>
+    	</div>
+    	
+    	<!-- Question 1 YES --> <!-- QUESTION 2 -->
+    	<div id="midevalAdventure1" class="content-page hidden" data-yes="midevalAdventure1A" data-no="midevalAdventure2">
+    		<p>"Well, you were thought to be a murderer, but the real criminal was caught. so You have been pardoned.</p>
+    		<p>You can go down the hall to the sairs and have your leave."</p>
+    		<p>                </p>
+    		<p>                </p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton">Go up the stairs</a>
+    		<a href="#" class="noButton">Try to take the Guard's sword</a>
+    	</div>
+    	
+    	<!-- Question 1/2 NO --> <!-- ENDING 1 -->
+    	<div id="midevalAdventure2" class="content-page hidden">
+    		<p>"Alright! You've had your chance!" The guard stabs you and you die.</p>
+    		<p>Start Over</p>
+    		<div class="animationContainer">
+    			<img src="./img/StickWithoutSword.png" id="mainC"/>
+    			<img src="./img/StickWithSword.png" id="Gaurd1"/>
+    		</div>
+    	</div>
+    	
+    	<!-- Question 2 YES --> <!-- QUESTION 3 -->
+    	<div id="midevalAdventure1A" class="content-page hidden" data-yes="midevalAdventure2A" data-no="midevalAdventure2B">
+    		<p>You walk down the hall and up the spiral stair. You come up in another hallway. Delightful fumes seep from further down the hall.</p>
+    		<p>                </p>
+    		<p>                </p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton">Investigate</a>
+    		<a href="#" class="noButton">Go back down the stairs</a>
+    		
+    	</div>
+    	
+    	<!-- Question 3 YES --> <!-- QUESTION 4 -->
+    	<div id="midevalAdventure2A" class="content-page hidden" data-yes="midevalAdventure3A" data-no="midevalAdventure3B">
+    		<p>You continue towards the smell. You then hear the off-key singing of a man, and you come to realize that he is, in fact the chef.</p>
+    		<p>You silently sneak into the room and see that his back is facing you. There is a large knife on the counter.</p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton">Take the knife and kill the chef</a>
+    		<a href="#" class="noButton">Take the knife and sneak away</a>
+    		
+    	</div>
+    	
+    	<!-- Question 3 NO --> <!-- ENDING 2 -->
+    	<div id="midevalAdventure2B" class="content-page hidden">
+    		<p>Seriously? Did you seriously just pick that?</p>
+    		<p>I am dissapointed in you. I just expected a little adventure.</p>
+    		<p>What do you give me? go back to jail?</p>
+    		<p>Seriously, that is just sad. Why don't you just start over.</p>
+    	</div>
+ 		
+ 		<!-- Question 4 YES --> <!-- QUESTION 5 -->
+ 		<div id="midevalAdventure3A" class="content-page hidden" data-yes="midevalAdventure4A" data-no="midevalAdventure4B">
+ 			<p>You quietly slip the knife off the counter and grasp it tightly in your hand.</p>
+ 			<p>You then sneak up behind the chef and slam the blade into his skull. He dies without a noise.</p>
+ 			<p>You then hide the knife in your clothes and walk away. You continue walking throughout what seems to be a big castle.</p>
+ 			<p>Eventuly, you make it to the protcullis. You tell the guards your buissness and they let you through.</p>
+ 			<p>As you walk through the town, there are merchants and many others standing idle in the streets.</p>
+ 			<p>You eventuly come to the edge of the town which is sparsely inhabited. But then you happen to see a nobleman walking about.</p>
+ 			<p>There is a small sack full of coins hanging from his belt.</p>
+ 			<p>What do you do?</p>
+ 			<a href="#" class="yesButton">Take the money</a>
+ 			<a href="#" class="noButton">Leave him alone</a>
+ 		</div>
+ 		
+ 		<!-- Question 4 NO --> <!-- QUESTION 6 -->
+ 		<div id="midevalAdventure3B" class="content-page hidden" data-yes="midevalAdventure4A" data-no="midevalAdventure4B">
+ 			<p>You slip the knife off the counter.</p>
+ 			<p>You then hide the knife in your clothes and walk away. You continue walking throughout what seems to be a big castle.</p>
+ 			<p>Eventuly, you make it to the protcullis. You tell the guards your buissness and they let you through.</p>
+ 			<p>As you walk through the town, there are merchants and many others standing idle in the streets.</p>
+ 			<p>You eventuly come to the edge of the town which is sparsely inhabited. But then you happen to see a nobleman walking about.</p>
+ 			<p>There is a small sack full of coins hanging from his belt.</p>
+ 			<p>What do you do?</p>
+ 			<a href="#" class="yesButton">Take the money</a>
+ 			<a href="#" class="noButton">Leave him alone</a>
+ 		</div>
+ 		
+ 		<!-- Question 5/6 YES --> <!-- QUESTION 7 -->
+ 		<div id="midevalAdventure4A" class="content-page hidden" data-yes="midevalAdventure5B" data-no="midevalAdventure5A">
+ 			<p>You sneak right up behind the man as he pauses his walking and carefully slip the coin purse from his belt.</p>
+ 			<p>Very lucky for you, he doesn't notice. You continue walking until you reach the exit of the castle.</p>
+ 			<p>You tell the guards your buisness and you are on your way. Right outside the castle gate there are stables.</p>
+ 			<p>You ask to buy a horse. The stable master says in a gruff voice, "That will be 50 gold coins."</p>
+ 			<p>What do you do?</p>
+ 			<a href="#" class="yesButton">Pay the man, and take the horse?</a>
+ 			<a href="#" class="noButton">Steal the horse</a>
+ 		</div>
+ 		
+ 		<!-- Question 5/6 NO --> <!-- QUESTION 8 -->
+ 		<div id="midevalAdventure4B" class="content-page hidden" data-yes="midevalAdventure5C" data-no="midevalAdventure5A">
+ 			<p>You continue past the man and continue walking until you reach the exit of the castle.</p>
+ 			<p>You tell the guards your buisness and you are on your way. Right outside the castle gate there are stables.</p>
+ 			<p>You ask to buy a horse. The stable master says in a gruff voice, "That will be 50 gold coins."</p>
+ 			<p>You don't have money.</p>
+ 			<p>What do you do?</p>
+ 			<a href="#" class="yesButton">Knock the man out then steal the horse</a>
+ 			<a href="#" class="noButton">Steal the horse</a>
+ 		</div>   
+    	
+    	<!-- Question 7/8 NO --> <!-- ENDING 3 -->
+    	<div id="midevalAdventure5A" class="content-page hidden">
+    		<p>Ignoring the man's reply, you mount the horse and ride off. Apparently, the man calls for the guards.</p>
+    		<p>You begin to think you are safe when a crossbow bolt penetrates your chest from the back. You then begin to lose sight and then fall off the horse dead.</p>
+			<div class="animationContainer">
+				<img src="./img/StickHorse.png" id="Stickhorse"/>
+				<img src="./img/StickWithCrossbow.png" id="Gaurd2"/>
+				<img src="./img/Arrow.png" id="Arrow"/>
+			</div>
+    	</div>
+    	
+    	<!-- Question 7 YES --> <!-- QUESTION 9 -->
+    	<div id="midevalAdventure5B" class="content-page hidden" data-yes="midevalAdventure6A" data-no="midevalAdventure6B">
+    		<p>The man smiles in satisfaction and motions for you to take the horse. You ride away and go on for miles on end.</p>
+    		<p>You then stop and make a camp for the night and go on for another day. You then come into the sight of a mountain.</p>
+    		<p>In the morning, you continue down the road and by midday a small wooden building appears. As you come closer you realize that it is an inn.</p>
+    		<p>You walk up to the inn.</p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton">Get food for the trip</a>
+    		<a href="#" class="noButton">Keep moving along towards the mountain</a>
+    	</div>
+   		
+   		<!-- Question 8 YES --> <!-- QUESTION 10 -->
+   		<div id="midevalAdventure5C" class="content-page hidden" data-yes="midevalAdventure6A" data-no="midevalAdventure6B">
+   			<p>You club the man on the head with the blunt side of the knife and hop on the horse. You ride away and go on for miles on end.</p>
+   			<p>You then stop and make a camp for the night and go on for another day. You then come into the sight of a mountain.</p>
+   			<p>In the morning, you continue down the road and by midday a small wooden building appears. As you come closer you realize that it is an inn.</p>
+    		<p>You walk up to the inn.</p>
+    		<p>What do you do?</p>
+    		<a href="#" class="yesButton">Get food for the trip</a>
+    		<a href="#" class="noButton">Keep moving along towards the mountain</a>
+   		</div>
+   		
+   		<!-- Question 9/10 YES --> <!-- QUESTION 11 -->
+   		<div id="midevalAdventure6A" class="content-page hidden" data-yes="midevalAdventure7A" data-no="midevalAdventure7B">
+   			<p>You walk into the inn and ask for food. "Well, Do you have any coin?" the woman at the counter asks.</p>
+   			<p>You turn out your pockets and find nothing. She then states, "You can't get nothin' without money. Sorry."</p>
+   			<p>So you continue on your newly found adventure to this mountain. You reach the base of the tower of rock at dusk.</p>
+   			<p>You then make camp for the night. You wake up in the morning and start a climb up the rocky face of this great structure.</p>
+   			<p>Then, you come to a big mouth in the mountain, and in your curiosity, you investigate.</p>
+   			<p>At the opening of the cavern, there is one torch. You pick it up.</p>
+   			<p>What do you do?</p>
+   			<a href="#" class="yesButton">Turn around the way you came</a>
+   			<a href="#" class="noButton">Continue</a>
+   		</div>
+   		
+   		
+   		<!-- Question 9/10 NO --> <!-- QUESTION 12 -->
+   		<div id="midevalAdventure6B" class="content-page hidden" data-yes="midevalAdventure7A" data-no="midevalAdventure7B">
+   			<p>So you continue on your newly found adventure to this mountain. You reach the base of the tower of rock at dusk.</p>
+   			<p>You then make camp for the night. You wake up in the morning and start a climb up the rocky face of this great structure.</p>
+   			<p>Then, you come to a big mouth in the mountain, and in your curiosity, you investigate.</p>
+   			<p>At the opening of the cavern, there is one torch. You pick it up.</p>
+   			<p>What do you do?</p>
+   			<a href="#" class="yesButton">Turn around the way you came</a>
+   			<a href="#" class="noButton">Continue</a>
+   		</div>
+   		
+   		
+   		<!-- Question 11/12 YES --> <!-- ENDING 4 -->
+   		<div id="midevalAdventure7A" class="content-page hidden">
+   			<p>Wow. Just wow. I am seriously beggining to wonder what the heck is going therough your mind.</p>
+   			<p>I'm serious, this is just sad. I literally asked for you to go on this really short, makeshift adventure.</p>
+   			<p>And what do you give me? more disrespect? Just start over or leave. I don't really care. Quit wasting time.</p>
+   			<p>It's your loss, not mine.</p>
+   		</div>
+   		
+   		
+   		<!-- Question 11/12 NO--> <!-- QUESTION 13 -->
+   		<div id="midevalAdventure7B" class="content-page hidden" data-yes="midevalAdventure8A" data-no="midevalAdventure8B">
+   			<p>You slowly and silently creep into the cave. The dim light from the torch reveals bats hanging from the cieling.</p>
+   			<p>you continue down the dark stone halls and you come upon the skeleton of a person who has, by the looks of the surroundings,</p>
+   			<p>and the corpse, been burned. You strip the armor from the dead body and put it on yourself. It won't give much protection,</p>
+   			<p>but it will offer you some comfort. You sit down and take a break. You then, reluctantly pick your feet off the round and keep moving.</p>
+   			<p>After what seems like hours you begin to hear heavy breathing. You then, using any common sense you have, slowly creep towards it.</p>
+   			<p>A large, scaley, red dragon comes into your sight.</p>
+   			<p>What do you do?</p>
+   			<a href="#" class="yesButton">Wake the dragon then attempt killing it in an epic duel</a>
+   			<a href="#" class="noButton">Try and kill it as it sleeps</a>
+   		</div>
+   		
+   		
+   		<!-- Question 13 YES --> <!-- ENDING 5 -->
+   		<div id="midevalAdventure8A" class="content-page hidden" data-yes="midevalAdventureFinale" data-no="midevalAdventureFinale">
+   			<p>You see, it would be really cool if this was that kind of story. But it's not. I am just beeing realistic. I'll just share the hard truth.</p>
+   			<p>The dragon wakes and seesyou in armor, holding a knife. Seeing that you pose a threat, the dragon burns you to a crisp and you die.</p>
+   			<p>There you go. End of story. Game over. You die as a victim of an unknown foe, and you die without friends. The End.</p>
+   			<a href="#" class="yesButton, noButton">CLICK ME</a>
+   			<div class="animationContainer">
+   				<img src="./img/StickmanFire.png" id="StickmanFire"/>
+   				<img src="./img/DragonFire.png" id="DragonFire"/>
+   			</div>
+   		</div>
+   		
+   		
+   		<!-- Question 13 NO --> <!-- ENDING 6 -->
+   		<div id="midevalAdventure8B" class="content-page hidden" data-yes="midevalAdventureFinale" data-no="midevalAdventureFinale">
+   			<p>You creep towards the beast and you hack as hard as you can at it's neck. It suddenly wakes and seeing that you are vulnerable,</p>
+   			<p>you climb onto the neck of the beast and hold on tight. You keep hacking away at the beast's neck and you finally break through, killing the monster.</p>
+   			<p>You then, seeing that you could be rich from this kill, go back, dragging the head of the dragon behind you.</p>
+   			<p>once you get out of the cave, you make the slow journey back to the castle, and are forever known as a renowned hero.</p>
+   			<p>Oh, also, you get a fortune and live in a mansion for the rest of your life. The End</p>
+   			<a href="#" class="yesButton, noButton">CLICK ME</a>
+   		</div>
+   		
+   		
+   		
+   		<div id="midevalAdventureFinale" class="content-page hidden">
+   			<p>Well, how was it? Did you at least find it worth your while?</p>
+   			<p>If not, then I am sorry, I am a beginner in the feild of computer programming, so don't expect a whole lot from me.</p>
+   			<p>But I am serious, I hope you liked it; I mean, it was a whole lot of fun to make and all. but again, this is a school prject,</p>
+   			<p>so I wasn't aiming for the best of the best here. I was trying to get a really good grade. So goodbye web-surfer, until next we meet.</p>
+   			<p>Go have the rest of you exciting adventure somewhere else.</p>
+   		</div>
+   		 
+    </div>
+    </div>
+ 
+   
+
+    <footer>
+    </footer>
+  		<audio id="menuSelect" preload="auto">
+  			<source src="./audio/menuSelect.mp3" type="audio/mpeg"/>
+  		</audio>
+  		
+  		<audio id="pageTransition" preload="auto">
+  			<source src="./audio/pageTransition.mp3" type="audio/mpeg"/>
+  		</audio>
+  		
+  		<audio id="gameOver" preload="auto">
+  			<source src="./audio/gameOver.mp3" type="audio/mpeg"/>
+  		</audio>
+</body>
+</html>
