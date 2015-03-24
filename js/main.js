@@ -5,9 +5,8 @@ var initializePage = function() {
 	var menuSelect = document.getElementById('menuSelect');
 	var pageTransition = document.getElementById('pageTransition');
 	var gameOver = document.getElementById('gameOver');
-	 
-	$('#pageTitle').html('MyTextAdventure');
-	$('#pageTitle').css('color', 'black');	
+
+	
 	
 	
 	$('#adventureSelector').on('change', handleAdventureChange);

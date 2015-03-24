@@ -13,6 +13,11 @@
 	cursor:url(../img/cursor2.png), pointer;
 }
 
+#pageTitle {
+	text-align: center;
+
+}
+
 #textBox {
 	min-height: 470px;
 	width: 100%; 	
