@@ -9,6 +9,7 @@
 	padding-right: 50px;
 }
 
+
 #thePage:active {
 	cursor:url(../img/cursor2.png), pointer;
 }
