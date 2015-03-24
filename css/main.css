@@ -16,7 +16,11 @@
 
 #pageTitle {
 	text-align: center;
+	
 
+}
+#pageTitle img {
+	border-radius: 30px;
 }
 
 #textBox {
