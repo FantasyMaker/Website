@@ -1,6 +1,6 @@
 /* tan box in the center of page */
 #thePage {
-	background-image:url(../img/WebBackground.jpg);
+	background-image:url(../img/TableTop.jpg);
 	cursor:url(../img/cursor.png), pointer;
 }
 
@@ -26,7 +26,7 @@
 #textBox {
 	min-height: 470px;
 	width: 100%; 	
-	background-image:url(../img/parchment.jpg);
+	background-image:url(../img/ParchmentPaper.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	font-family: "Papyrus";
