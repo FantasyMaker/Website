@@ -113,7 +113,7 @@
 
 .yesButton, .noButton {
 	display: block;
-	color: #1D721D;
+	color: #000099;
 	text-decoration: none;
 	cursor:url(../img/cursor.png), pointer;
 }
